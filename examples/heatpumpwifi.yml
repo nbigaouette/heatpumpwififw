@@ -1,0 +1,12 @@
+esphome:
+  name: heatpumpwifi
+  friendly_name: "HeatPumpWifi"
+
+esp32:
+  # board: esp32dev
+  board: esp32-c6-devkitc-1
+  variant: esp32c6
+  framework:
+    type: esp-idf
+    version: recommended
+    # version: 5.5.4
