@@ -1,0 +1,12 @@
+.esphome/
+secrets.yaml
+*.bin
+.vscode
+.idea
+__pycache__
+*.pyc
+venv/
+.venv/
+
+.DS_Store
+Thumbs.db
