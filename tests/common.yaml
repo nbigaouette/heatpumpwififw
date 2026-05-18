@@ -1,0 +1,13 @@
+# FIXME: Change to proper values in here, they have simply been copy pasted
+
+uart:
+  id: device_uart
+  tx_pin: GPIO17
+  rx_pin: GPIO16
+  baud_rate: 9600
+
+your_device_name:
+  id: main_device
+  uart_id: device_uart
+  device_address: 0x01
+  poll_interval: 5s

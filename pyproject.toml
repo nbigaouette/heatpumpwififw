@@ -1,7 +1,7 @@
 [project]
 name = "heatpumpwifi"
 version = "0.1.0"
-description = "HeatPumpWifi"
+description = "HeatPumpWiFi"
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.12"
