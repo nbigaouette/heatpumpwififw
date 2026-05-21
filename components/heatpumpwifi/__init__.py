@@ -74,7 +74,10 @@ async def to_code(config):
     # cg.add(uart_var.set_baud_rate(DEFAULT_BAUD_RATE))
     # await cg.register_component(uart_var, {})
 
-    # # Create the HeatPumpWifi component
+    # Create the HeatPumpWifi component
+    var = cg.new_Pvariable(config[CONF_ID])
+    await cg.register_component(var, config)
+    await uart.register_uart_device(var, config)
     # var = cg.new_Pvariable(config[cv.GenerateID()], uart_var)
     # await cg.register_component(var, config)
 
