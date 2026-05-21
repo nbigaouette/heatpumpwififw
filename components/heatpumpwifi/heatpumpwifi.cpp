@@ -14,6 +14,12 @@ namespace esphome
             // Do setup here
         }
 
+        // Initialize device last so that logger is initialized and available in `setup()`
+        float HeatPumpWiFi::get_setup_priority() const
+        {
+            return setup_priority::LATE;
+        }
+
         void
         HeatPumpWiFi::setup()
         {
