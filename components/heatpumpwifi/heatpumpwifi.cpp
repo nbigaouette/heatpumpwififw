@@ -24,7 +24,12 @@ namespace esphome
         HeatPumpWiFi::setup()
         {
             ESP_LOGI(TAG, "HeatPumpWiFi setup");
-            // Initialize your device here
+
+            ESP_LOGD(TAG, "Flushing UART...");
+            this->flush();
+            ESP_LOGD(TAG, "UART flushed");
+
+            ESP_LOGD(TAG, "Setup done");
         }
 
         void HeatPumpWiFi::loop()
