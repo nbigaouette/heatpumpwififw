@@ -40,7 +40,7 @@ CONFIG_SCHEMA = cv.Schema({
     cv.GenerateID(): cv.declare_id(HeatPumpWiFi),
     cv.Required(CONF_ID): cv.declare_id(HeatPumpWiFi),
     # cv.Optional(CONF_UART, default="heatpumpwifi_uart"): cv.use_id(uart.UARTComponent),
-}).extend(uart.UART_DEVICE_SCHEMA)
+}).extend(uart.UART_DEVICE_SCHEMA).extend(cv.COMPONENT_SCHEMA)
 
 def final_validate(config):
     print("config: ", config)
