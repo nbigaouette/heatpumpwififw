@@ -11,6 +11,8 @@ namespace esphome
         class HeatPumpWiFi : public Component, public uart::UARTDevice
         {
         public:
+            HeatPumpWiFi();
+
             void setup() override;
             void loop() override;
             void dump_config() override;

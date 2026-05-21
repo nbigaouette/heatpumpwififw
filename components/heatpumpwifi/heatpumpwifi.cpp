@@ -1,10 +1,21 @@
+#include "esphome/core/log.h"
 #include "heatpumpwifi.hpp"
+
+// gnu++20
 
 namespace esphome
 {
     namespace heatpumpwifi
     {
         static const char *const TAG = "HeatPumpWiFi";
+
+        HeatPumpWiFi::HeatPumpWiFi()
+        {
+            ESP_LOGE(TAG, "HeatPumpWiFi::HeatPumpWiFi() ERROR");
+            ESP_LOGW(TAG, "HeatPumpWiFi::HeatPumpWiFi() WARN");
+            ESP_LOGI(TAG, "HeatPumpWiFi::HeatPumpWiFi() INFO");
+            ESP_LOGD(TAG, "HeatPumpWiFi::HeatPumpWiFi() DEBUG");
+        }
 
         void
         HeatPumpWiFi::setup()
