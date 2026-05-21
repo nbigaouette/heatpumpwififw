@@ -11,10 +11,7 @@ namespace esphome
 
         HeatPumpWiFi::HeatPumpWiFi()
         {
-            ESP_LOGE(TAG, "HeatPumpWiFi::HeatPumpWiFi() ERROR");
-            ESP_LOGW(TAG, "HeatPumpWiFi::HeatPumpWiFi() WARN");
-            ESP_LOGI(TAG, "HeatPumpWiFi::HeatPumpWiFi() INFO");
-            ESP_LOGD(TAG, "HeatPumpWiFi::HeatPumpWiFi() DEBUG");
+            // Do setup here
         }
 
         void
@@ -38,6 +35,10 @@ namespace esphome
         void HeatPumpWiFi::dump_config()
         {
             ESP_LOGCONFIG(TAG, "HeatPumpWiFi:");
+            ESP_LOGE(TAG, "HeatPumpWiFi::dump_config() ERROR");
+            ESP_LOGW(TAG, "HeatPumpWiFi::dump_config() WARN");
+            ESP_LOGI(TAG, "HeatPumpWiFi::dump_config() INFO");
+            ESP_LOGD(TAG, "HeatPumpWiFi::dump_config() DEBUG");
         }
 
         void HeatPumpWiFi::send_command_(uint8_t *data, size_t len)
